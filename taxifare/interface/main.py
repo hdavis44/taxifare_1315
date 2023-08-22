@@ -65,6 +65,8 @@ def preprocess(min_date: str = '2009-01-01',
             y,
         ),
                        axis=1))
+    # print(data_processed_with_timestamp)
+    # print(data_processed_with_timestamp.dtypes)
 
     load_data_to_bq(data_processed_with_timestamp,
                     gcp_project=GCP_PROJECT,
